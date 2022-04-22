@@ -1,16 +1,20 @@
 import * as React from "react"
+import Helmet from "react-helmet"
 import Splash from "../images/splash.png"
 import Logo from "../images/logo.svg"
 
-// markup
 const IndexPage = () => {
   return (
     <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Deploy with Cloud 66 Prepress</title>
+      </Helmet>
       <article>
         <div class="mx-auto">
           <div class="relative overflow-hidden">
             <div class="absolute inset-0">
-              <img class="h-full w-full object-cover" src={Splash} alt="Salut" />
+              <img class="h-full w-full object-cover" src={Splash} alt="Salute" />
               <div class="absolute inset-0 bg-yellow-700 mix-blend-multiply"></div>
             </div>
             <div class="relative h-screen">
